@@ -16,13 +16,16 @@ To install and set up the project locally, follow these steps:
     cd MENTIS
     ```
 
-3. Install the necessary dependencies (if applicable).
+3. Install the necessary dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
-Provide instructions on how to use the project. Include examples and code snippets if necessary.
+This is a project that aims to help the user to make a simple psychological test through which he can reassure himself and can through the site communicate with a psychiatrist from the site
 
 ## Contributing
-Contributions are welcome! Please follow these steps to contribute:
+This project aims to raise awareness about mental health
 
 1. Fork the repository.
 2. Create a new branch with a descriptive name:
@@ -43,7 +46,7 @@ Contributions are welcome! Please follow these steps to contribute:
 If you encounter any issues, please check the [issues](https://github.com/MohamedAyman128/MENTIS/issues) section and create a new issue if your problem is not already listed.
 
 ## License
-Specify the license under which the project is distributed (if applicable).
+The license for this project is due to MENTIS which is already owned by [Mohamed Ayman](https://github.com/MohamedAyman128).
 
 ## Support
-For support, please contact [MohamedAyman128](https://github.com/MohamedAyman128).
+For support, please contact [Mohamed Ayman](https://github.com/MohamedAyman128).
