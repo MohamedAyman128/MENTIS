@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    body {
+        background: linear-gradient(to bottom, rgba(55, 113, 91, 1) 50%, rgba(255, 247, 234, 1) 50%);
+        font-family: "Inter", serif;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .alert {
+        background-color: rgba(247, 222, 181, 1);
+        color: rgba(55, 113, 91, 1);
+        border: 1px solid rgba(55, 113, 91, 1);
+        padding: 15px;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 600px;
+        text-align: center;
+    }
+    .btn {
+        background-color: rgba(55, 113, 91, 1);
+        color: rgba(247, 222, 181, 1);
+        border: 1px solid rgba(55, 113, 91, 1);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .btn:hover {
+        background-color: rgba(247, 222, 181, 1);
+        color: rgba(55, 113, 91, 1);
+        transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <p class="alert alert-info text-primary">Your Result has been sent successfully</p>
+  <a href="{{request.META.HTTP_REFERER}}/../" class="btn btn-outline-primary">Click here to come back.</a>
+</body>
+</html>

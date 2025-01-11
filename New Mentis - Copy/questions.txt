@@ -1,0 +1,46 @@
+Sadness:
+
+"On a scale from 1 to 10, how often have you felt persistently sad or hopeless in the past two weeks?"
+Euphoric:
+
+"How frequently do you experience sudden bursts of extreme happiness or euphoria without a clear reason?"
+Exhausted:
+
+"How often do you feel physically or mentally exhausted despite adequate rest?"
+Sleep Disorder:
+
+"Have you been experiencing difficulties falling asleep or maintaining a regular sleep schedule recently?"
+Mood Swing:
+
+"How often do you experience significant changes in mood without clear triggers?"
+Suicidal Thoughts:
+
+"Have you had thoughts of harming yourself or ending your life in the past month?"
+Anorexia:
+
+"Have you been intentionally restricting food intake or experiencing a lack of appetite recently?"
+Authority Respect:
+
+"Do you find it difficult to respect or follow rules and instructions from authority figures?"
+Try-Explanation:
+
+"Do you feel the need to explain yourself frequently, even in situations where it might not be necessary?"
+Aggressive Responses:
+
+"How often do you react aggressively when faced with criticism or challenging situations?"
+Ignore & Move-On:
+"Do you tend to avoid conflicts and ignore problems rather than addressing them directly?"
+Nervous Breakdown:
+"Have you ever experienced a nervous breakdown or felt like you were losing control due to stress?"
+Admit Mistakes:
+"Are you comfortable admitting your mistakes when you recognize them, or do you find it challenging?"
+Overthinking:
+"Do you often find yourself overanalyzing situations or obsessing over small details?"
+Sexual Activity:
+"Has there been a noticeable change in your sexual activity or interest recently?"
+Concentration:
+"Do you find it difficult to maintain focus or concentrate on tasks for extended periods?"
+Optimism:
+"How would you describe your outlook on the future—optimistic, pessimistic, or neutral?"
+Expert Diagnose:
+"Have you previously received a diagnosis related to mental health from a professional?"

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    background: linear-gradient(to bottom, rgba(55, 113, 91, 1) 50%, rgba(255, 247, 234, 1) 50%);
+    font-family: "Inter", serif;
+}
+header .text-center{
+    color: rgba(255, 227, 185, 1);
+    font-size: 46px;
+}
+.login-section .forImg{
+    text-align: center;
+}
+.login-section img{
+    width: 93px;
+    height: 93px;
+    display: block;
+    display: inline-block; 
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+.half-background {
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+} 
+.content { 
+    width: 100%; 
+}
+.container {
+    margin-top: 34px;
+}
+.form-group{
+padding:0px 15px;
+}
+.no-gutters{
+    background-color: rgba(247, 222, 181, 1);
+    border-radius: 10px;
+}
+.login-section {
+    padding: 30px;
+}
+.btns{
+    /* margin: 0px 20px;
+    padding:0px 25px; */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+.btn {
+    padding: 0px 20px;
+}
+.btn-primary{
+    background-color: rgba(55, 113, 91, 1);
+    color: rgba(247, 222, 181, 1);
+}
+.btn-primary:hover{
+    background-color: rgba(247, 222, 181, 1);
+    color: rgba(55, 113, 91, 1); 
+    border-color: rgba(55, 113, 91, 1); 
+    transform: scale(1.15);
+}
+
+.btn-secondary{
+    border: 1px solid rgba(55, 113, 91, 1);
+    background-color:rgba(247, 222, 181, 1);
+    color: rgba(55, 113, 91, 1);
+}
+.btn-secondary:hover{
+    background-color: rgba(55, 113, 91, 1);
+    color: rgba(247, 222, 181, 1);
+    transform: scale(1.15);
+}
+
+.btn-secondary {
+    border: 1px solid rgba(55, 113, 91, 1);
+    background-color: rgba(247, 222, 181, 1);
+    color: rgba(55, 113, 91, 1);
+}
+.btn-secondary:hover {
+    background-color: rgba(55, 113, 91, 1);
+    color: rgba(247, 222, 181, 1);
+    transform: scale(1.15);
+}
+
+.btns button {
+    margin: 10px;
+}
+
+.illustration-section {
+    /* background-color: #2e6b4e; */
+    background-color: rgba(55, 113, 91, 1);
+    border-radius: 16px;
+    /* margin-right: 10px; */
+    margin :10px 0px;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    transition: transform 0.5s ease;
+}
+.card{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.form-control{
+    font:rgba(55, 113, 91, 1) ;
+    font-size: 16px;
+    padding: 5px; 
+    transition: border-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent; 
+    border: none;
+    border-bottom: 1px solid rgba(55, 113, 91, 1); 
+    outline: none; 
+}
+.form-control:focus {
+    border-bottom-color: rgb(32, 67, 54);
+    background-color: transparent; 
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+.illustration-section img {
+    max-width: 100%;
+
+}
+
+footer ul li{
+    display: inline;
+    justify-content: center;
+}
+.social-icons {
+    margin-top: 20px;
+    /* text-align: center; */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #2e6b4e; 
+}
+.social-icons img{
+    height: 50px;
+    width: 50px;
+}
+.social-icons li:hover {
+    transform: scale(1.5);
+}
+.text-center p{
+    font-family: Istok Web;
+    color:white;
+    font-size: 22px;
+}
+
+.move-form #loginSection {
+    order: 2;
+}
+
+.move-form #illustrationSection {
+    order: 1;
+}

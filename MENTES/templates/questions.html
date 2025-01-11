@@ -1,0 +1,362 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENTIS Questions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: rgba(55, 113, 91, 1);
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: rgba(55, 113, 91, 1);
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            color: rgba(255, 227, 185, 1);
+            font-size: 36px;
+            padding-left: 40px;
+            font-family: 'Georgia', serif;
+        }
+
+        .navbar-brand:hover {
+            color: #f5f5f5;
+        }
+
+        .nav-link {
+            color: #f5deb3;
+            font-family: 'Georgia', serif;
+        }
+
+        .nav-link:hover {
+            color: #f5f5f5;
+            text-decoration: underline;
+        }
+
+        /* Profile Button Fix */
+        .navbar-nav .nav-item:last-child .nav-link {
+            background-color: rgba(255, 227, 185, 1);
+            color: rgba(55, 113, 91, 1);
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-item:last-child .nav-link:hover {
+            background-color: rgba(255, 227, 185, 0.8);
+            color: rgba(34, 85, 69, 1);
+        }
+
+        /* Content section */
+        .content {
+            background-color: #f5deb3;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            border: 2px solid rgba(55, 113, 91, 1);
+            overflow: hidden;
+        }
+
+        .content h2 {
+            color: rgba(55, 113, 91, 1);
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-wrap: break-word;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn-group .btn {
+            width: 100%;
+            max-width: 400px;
+            word-wrap: break-word;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: rgba(55, 113, 91, 1);
+            color: rgba(255, 227, 185, 1);
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border: 2px solid rgba(55, 113, 91, 1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: rgba(34, 85, 69, 1);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(34, 85, 69, 0.3);
+        }
+
+        .nav-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(55, 113, 91, 1);
+            color: rgba(255, 227, 185, 1);
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-family: 'Georgia', serif;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .content h2 {
+                font-size: 22px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+        }
+        .email-input, .submit-input {
+    width: 100%;
+    border-radius: 15px;
+    transition: border-color 0.3s ease;
+    background-color: transparent; 
+    border: none;
+    outline: none;
+    padding: 10px;color: rgba(255, 227, 185, 1);
+    
+}
+.submit-input:hover{
+    transform: scale(1.3);
+}
+.email-input {
+    color: rgba(55, 113, 91, 1);
+}
+
+.email-input:focus {
+    border-bottom-color: rgb(32, 67, 54);
+    background-color: transparent; 
+    border: none;
+}
+
+.email-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+    border: none;
+}
+.row{
+    color: rgba(255, 227, 185, 1);
+    /* padding: 5px;  */
+    /* margin: 20px auto;  */
+    text-align: center; 
+}
+.col-md-4{
+    background-color: rgba(55, 113, 91, 1);
+    border-radius: 15px; 
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{% url 'home:home' %}">MENTIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home:home' %}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'home:about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'accounts:profile' %}">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content" id="questions-container">
+        {% for question in Question %}
+        <div class="form-group question" id="question{{ question.id }}" style="{% if forloop.first %}display: block;{% else %}display: none;{% endif %}">
+            <h2>{{ question.question_text }}</h2>
+            <div class="btn-group">
+                {% for answer in Answers %}
+                {% if question.id == answer.question %}
+                <button type="button" class="btn">{{ answer.answer_text }}</button>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="nav-buttons">
+            <button type="button" id="prevBtn" class="btn" style="display:none;" onclick="prevQuestion()">Previous</button>
+            <button type="button" id="nextBtn" class="btn" onclick="nextQuestion()">Next</button>
+            <button type="button" id="finishBtn" class="btn" style="display:none;" onclick="finishQuestions()">Finish</button>
+        </div>
+    </section>
+
+    <div class="content" id="completion-message" style="display: none;">
+        <h2>Thank you for completing the questions!</h2>
+        <p>Your responses have been recorded.</p>
+
+        <h3>Your Result:</h3>
+        <p id="result-text"></p>
+
+    </div>
+    
+    <div class="container text-center" id="email-form" style="display: none;">
+       <p style=" font-size: 20px; font-weight: bold; color: rgba(55, 113, 91, 1);">Write your email to send you the result</p>
+        <section>
+            <form action="{% url 'MENTES:send_email' %}" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-8">
+                        <input class="email-input" type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <input class="submit-input " type="submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MENTIS. All rights reserved.</p>
+    </footer>
+    <script>
+        let currentQuestion = 1;
+        const totalQuestions = {{ Question|length }};
+        let answers = []; // Array to store questions and answers
+
+        function nextQuestion() {
+            const selectedAnswer = document.querySelector(`#question${currentQuestion} .btn-group button.selected`);
+            if (!selectedAnswer) {
+                alert('Please select an answer before proceeding.');
+                return;
+            }
+
+            const questionText = document.querySelector(`#question${currentQuestion} h2`).textContent;
+            answers.push({
+                question: questionText,
+                answer: selectedAnswer.textContent
+            });
+
+            document.getElementById('question' + currentQuestion).style.display = 'none';
+            currentQuestion++;
+
+            if (currentQuestion <= totalQuestions) {
+                document.getElementById('question' + currentQuestion).style.display = 'block';
+            }
+
+            if (currentQuestion === totalQuestions) {
+                document.getElementById('nextBtn').style.display = 'none';
+                document.getElementById('finishBtn').style.display = 'inline-block';
+            }
+
+            document.getElementById('prevBtn').style.display = currentQuestion > 1 ? 'inline-block' : 'none';
+        }
+
+        function prevQuestion() {
+            document.getElementById('question' + currentQuestion).style.display = 'none';
+            currentQuestion--;
+            document.getElementById('question' + currentQuestion).style.display = 'block';
+
+            if (currentQuestion < totalQuestions) {
+                document.getElementById('nextBtn').style.display = 'inline-block';
+                document.getElementById('finishBtn').style.display = 'none';
+            }
+
+            document.getElementById('prevBtn').style.display = currentQuestion > 1 ? 'inline-block' : 'none';
+        }
+
+        function finishQuestions() {
+            document.getElementById('questions-container').style.display = 'none';
+            document.getElementById('completion-message').style.display = 'block';
+            document.getElementById('email-form').style.display = 'block';
+
+            const resultText = answers.map(a => `<strong>${a.question}</strong>: ${a.answer}`).join('<br>');
+            document.getElementById('result-text').innerHTML = resultText;
+
+            fetch("{% url 'MENTES:answers' %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify(answers)
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('result-text').innerHTML += `<br><strong>Final Score:</strong> ${data}`;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        document.addEventListener('click', function (e) {
+            if (e.target && e.target.classList.contains('btn')) {
+                const buttons = e.target.parentNode.querySelectorAll('.btn');
+                buttons.forEach(button => button.classList.remove('selected'));
+                e.target.classList.add('selected');
+            }
+        });
+    </script>
+</body>
+</html>

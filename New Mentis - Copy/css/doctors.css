@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Inter", serif;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    margin-top: -60px;
+}
+
+.nav-link {
+    color: #f7deb5;
+    font-size: large;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+.main {
+    background-color: #fff7ea;
+    height: 100%;
+    width: 100%;
+}
+
+.behind-svg {
+    width: 400px;
+    height: 400px;
+    background-color: #37715b;
+    padding: 25px;
+    border-radius: 15px;
+    margin-left: 70px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/**************main section*****************************************/
+.test {
+    background-color: #306450;
+    border: none;
+    padding: 10px;
+
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 250px;
+}
+
+.test:hover,
+.test:focus {
+    background-color: #134e37;
+    border: none;
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 250px;
+}
+
+.test a {
+    color: #f7deb5;
+    text-decoration: none;
+}
+
+.test-box {
+    border: 1px solid #134e37;
+    border-radius: 15px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+}
+
+.box-img {
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    border-radius: 35px;
+}
+
+.box-btn {
+    background-color: #134e37;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0px 0 50px;
+    width: 100px;
+}
+
+.box-btn a {
+    color: #f7deb5;
+    text-decoration: none;
+}
+
+/* .box-text{
+    
+} */
+/*****************footer section**********************************/
+.site-footer {
+    background-color: #37715b;
+    color: #ffe3b9;
+    padding: 10%;
+}
+
+.Feedback {
+    color: #07b463;
+    background-color: #ffe3b9;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.custom-form {
+    margin: auto;
+    border: 1px solid #f7deb5;
+    border-radius: 15px;
+    padding: 50px;
+    margin-top: -48px;
+    width: 400px;
+
+}
+
+.form-control-btn {
+    border: none;
+    border-radius: 0 0 15px 15px;
+    padding: 5px;
+    border: 1px solid #306450;
+    background-color: #306450;
+    width: 300px;
+    color: #f7deb5;
+}
+
+.form-control-input {
+    border: none;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+    border: 1px solid #306450;
+    width: 300px;
+
+}
+
+.email {
+    color: #f7deb5;
+}
+
+.site-footer-link {
+    color: #f7deb5;
+
+
+    padding: 10px;
+}
+
+.site-footer-links {
+    list-style: none;
+    display: flex;
+    margin-top: -100px;
+}
+
+.social-icon-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Design {
+    margin-left: -190px;
+    text-align: center;
+}
+
+/*************** doctors***********************/
+.hero-section {
+    background-image: url('../images/header.jpg'), linear-gradient(#37715b, #ffe3b9);
+    background-color: #f8f0e3;
+    background-repeat: no-repeat;
+    background-size: 108% 15%;
+    background-position: top;
+    padding-top: 200px;
+}
