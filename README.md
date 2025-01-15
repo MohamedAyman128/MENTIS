@@ -3,8 +3,10 @@
 ## Introduction
 MENTIS is a project repository owned by [Mohamed Ayman](https://github.com/MohamedAyman128). This repository is created to manage and develop the MENTIS project.
 
+
 ## Installation
 To install and set up the project locally, follow these steps:
+
 
 1. Create a new directory and set up a virtual environment:
     ```bash
@@ -45,8 +47,10 @@ To install and set up the project locally, follow these steps:
     python manage.py runserver
     ```
 
+
 ## Usage
 This is a project that aims to help the user to make a simple psychological test through which he can reassure himself and can through the site communicate with a psychiatrist from the site
+
 
 ## Contributing
 This project aims to raise awareness about mental health
@@ -66,14 +70,18 @@ This project aims to raise awareness about mental health
     ```
 5. Open a pull request to the main branch.
 
+
 ## Issues
 If you encounter any issues, please check the [issues](https://github.com/MohamedAyman128/MENTIS/issues) section and create a new issue if your problem is not already listed.
+
 
 ## License
 The license for this project is due to MENTIS which is already owned by [Mohamed Ayman](https://github.com/MohamedAyman128).
 
+
 ## Support
 For support, please contact [Mohamed Ayman](https://github.com/MohamedAyman128).
+
 
 ## Developers
 | Name             | Role                   | Specialization         | GitHub Profile                                      |
