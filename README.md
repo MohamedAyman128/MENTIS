@@ -33,21 +33,13 @@ To install and set up the project locally, follow these steps:
     ```bash
     git clone https://github.com/MohamedAyman128/MENTIS.git
     ```
-
-5. Navigate back to the `new_directory` and activate the virtual environment:
-    ```bash
-    cd ..
-    venv\Scripts\activate  # On Windows
-    # or
-    source venv/bin/activate  # On macOS/Linux
-    ```
     
-6. Install the necessary dependencies:
+5. Install the necessary dependencies:
     ```bash
     pip install -r requirements.txt
     ```
     
-7. Navigate to the `src` directory and install the necessary dependencies:
+6. Navigate to the `src` directory and install the necessary dependencies:
     ```bash
     cd src
     python manage.py runserver
@@ -82,3 +74,14 @@ The license for this project is due to MENTIS which is already owned by [Mohamed
 
 ## Support
 For support, please contact [Mohamed Ayman](https://github.com/MohamedAyman128).
+
+## Developers
+| Name             | Role                | Specialization         | GitHub Profile                                      |
+|------------------|---------------------|------------------------|-----------------------------------------------------|
+| Mohamed Ayman    | Backend Developer   | Full Stack Development | [Mohamed Ayman](https://github.com/MohamedAyman128) |
+| Ansam Yaseen     | Frontend Developer  | Web Development        | [Ansam Yaseen](https://github.com/ansamyaseen)      |
+| Amani Alfalougy  | Frontend Developer  | Web Development        | [Amani Alfalougy](https://github.com/developer3)    |
+| Mariam Mohamed   | Data Scientist      | Machine Learning       | [Mariam Mohamed](https://github.com/mariammohamd)   |
+| Maryam Eissa     | Data Scientist      | Machine Learning       | [Maryam Eissa](https://github.com/developer5)       |
+| Mohamed Hossam   | Network engineer    | Testing and QA         | [Mohamed Hossam](https://github.com/MoHossam1)      |
+| Dr. Osama Sheta  | Project Supervisor  | Project Management     | [Dr. Supervisor](https://github.com/drsupervisor)   |
