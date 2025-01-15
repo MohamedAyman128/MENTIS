@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sign-Up Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'css/sign-up.css' %}">
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h3 class="mb-4 pb-3">Sign Up</h3>
+                      <form id="sign-up-form" action="{% url 'accounts:signup' %}" method="post">
+                        {% csrf_token %}
+                        {% if form.errors %} 
+                        {% for field in form %}
+                        {% if field.errors %}
+                        <p style="color: red;">{{ field.label }}: {{ field.errors|join:", " }}</p>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %} 
+                        {% if next %} 
+                        {% if user.is_authenticated %} 
+                        <p>Your account doesn't have access to this page. To proceed, 
+                        please login with an account that has access.</p> 
+                        {% else %} 
+                        <p>Please login to see this page.</p> 
+                        {% endif %} 
+                        {% endif %}
+                        <div class="form-group">
+                          <input class="form-style" type="text" name="username" maxlength="150" autofocus class="form-control" placeholder="Username" required aria-describedby="id_username_helptext" id="id_username" placeholder="Full Name" required>
+                          <i class="input-icon uil uil-user"></i>
+                        </div>	
+                        <div class="form-group mt-2">
+                          <input class="form-style" type="email" name="email" maxlength="320" class="form-control" placeholder="Email" aria-describedby="id_email_helptext" id="id_email">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input class="form-style" type="password" name="password1" autocomplete="new-password" class="form-control" placeholder="Password" aria-describedby="id_password1_helptext" id="id_password1">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>       
+                        <div class="form-group mt-2">
+                          <input class="form-style" type="password" name="password2" autocomplete="new-password" class="form-control" placeholder="Password confirmation" aria-describedby="id_password2_helptext" id="id_password2">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>          
+                        <div class="form-group mt-2">
+                          <input class="form-style" type="text" class="form-control" name='age' placeholder='enter your age' id="age">
+                          <i class="input-icon uil uil-analytics"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                            <select name="gender" maxlength="6" id="id_gender" class="form-style">
+                        <option value="" selected disabled>gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                          <i class="input-icon uil uil-user"></i>
+                        </div>
+                        <button type="submit" class="btn mt-4">Register</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
