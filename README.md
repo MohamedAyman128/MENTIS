@@ -76,12 +76,12 @@ The license for this project is due to MENTIS which is already owned by [Mohamed
 For support, please contact [Mohamed Ayman](https://github.com/MohamedAyman128).
 
 ## Developers
-| Name             | Role                | Specialization         | GitHub Profile                                      |
-|------------------|---------------------|------------------------|-----------------------------------------------------|
-| Mohamed Ayman    | Backend Developer   | Full Stack Development | [Mohamed Ayman](https://github.com/MohamedAyman128) |
-| Ansam Yaseen     | Frontend Developer  | Web Development        | [Ansam Yaseen](https://github.com/ansamyaseen)      |
-| Amani Alfalougy  | Frontend Developer  | Web Development        | [Amani Alfalougy](https://github.com/developer3)    |
-| Mariam Mohamed   | Data Scientist      | Machine Learning       | [Mariam Mohamed](https://github.com/mariammohamd)   |
-| Maryam Eissa     | Data Scientist      | Machine Learning       | [Maryam Eissa](https://github.com/developer5)       |
-| Mohamed Hossam   | Network engineer    | Testing and QA         | [Mohamed Hossam](https://github.com/MoHossam1)      |
-| Dr. Osama Sheta  | Project Supervisor  | Project Management     | [Dr. Supervisor](https://github.com/drsupervisor)   |
+| Name             | Role                   | Specialization         | GitHub Profile                                      |
+|------------------|------------------------|------------------------|-----------------------------------------------------|
+| Mohamed Ayman    | Full Stack Development | Full Stack Development | [Mohamed Ayman](https://github.com/MohamedAyman128) |
+| Ansam Yaseen     | Frontend Developer     | Web Development        | [Ansam Yaseen](https://github.com/ansamyaseen)      |
+| Amani Alfalougy  | Frontend Developer     | Web Development        | [Amani Alfalougy](https://github.com/developer3)    |
+| Mariam Mohamed   | Data Scientist         | Machine Learning       | [Mariam Mohamed](https://github.com/mariammohamd)   |
+| Maryam Eissa     | Data Scientist         | Machine Learning       | [Maryam Eissa](https://github.com/developer5)       |
+| Mohamed Hossam   | Network engineer       | Testing and QA         | [Mohamed Hossam](https://github.com/MoHossam1)      |
+| Dr. Osama Sheta  | Project Supervisor     | Project Management     | [Dr. Supervisor](https://github.com/drsupervisor)   |
