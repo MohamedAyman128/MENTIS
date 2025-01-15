@@ -41,11 +41,16 @@ To install and set up the project locally, follow these steps:
     # or
     source venv/bin/activate  # On macOS/Linux
     ```
-
-6. Navigate to the `src` directory and install the necessary dependencies:
+    
+6. Install the necessary dependencies:
     ```bash
-    cd src/MENTIS
     pip install -r requirements.txt
+    ```
+    
+7. Navigate to the `src` directory and install the necessary dependencies:
+    ```bash
+    cd src
+    python manage.py runserver
     ```
 
 ## Usage
