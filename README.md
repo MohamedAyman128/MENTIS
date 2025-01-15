@@ -84,4 +84,4 @@ For support, please contact [Mohamed Ayman](https://github.com/MohamedAyman128).
 | Mariam Mohamed   | Data Scientist         | Machine Learning       | [Mariam Mohamed](https://github.com/mariammohamd)   |
 | Maryam Eissa     | Data Scientist         | Machine Learning       | [Maryam Eissa](https://github.com/developer5)       |
 | Mohamed Hossam   | Network engineer       | Testing and QA         | [Mohamed Hossam](https://github.com/MoHossam1)      |
-| Dr. Osama Sheta  | Project Supervisor     | Project Management     | [Dr. Supervisor](https://github.com/drsupervisor)   |
+| Dr. Osama Sheta  | Project Supervisor     | Project Management     | [Dr. Osama Sheta](https://github.com/drsupervisor)  |
