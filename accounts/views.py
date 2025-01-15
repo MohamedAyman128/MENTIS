@@ -13,7 +13,7 @@ from django.db import transaction
 class SignUpView(CreateView):
     form_class = SingUpForm
     success_url = reverse_lazy("login")
-    template_name = "registration/auth.html"
+    template_name = "registration/sign-up.html"
     
     @transaction.atomic
     def post(self, request: HttpRequest, *args: str, **kwargs: Any) -> HttpResponse:

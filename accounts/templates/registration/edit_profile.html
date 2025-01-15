@@ -53,32 +53,32 @@
                 {% csrf_token %}
                 <div class="form-group">
                   <label for="id_username">Username</label>
-                  <input type="text" name="username" value="admin" maxlength="150" class="form-control" placeholder="Username" required aria-describedby="id_username_helptext" id="id_username">
+                  <input type="text" name="username" value="{{ user_form.username.value }}" maxlength="150" class="form-control" placeholder="Username" required aria-describedby="id_username_helptext" id="id_username">
                   <div class="form-text">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
                 </div>
                 <div class="form-group">
                   <label for="id_email">Email address</label>
-                  <input type="email" name="email" value="admin@gmail.com" maxlength="254" class="form-control" placeholder="Email address" id="id_email">
-                </div>
-                <div class="form-group">
-                  <label for="id_about">About</label>
-                  <textarea name="about" cols="40" rows="5" class="form-control" placeholder="About" aria-describedby="id_about_helptext" id="id_about">test</textarea>
-                </div>
+                    <input type="email" name="email" value="{{ user_form.email.value }}" maxlength="254" class="form-control" placeholder="Email address" id="id_email">
+                  </div>
+                  <div class="form-group">
+                    <label for="id_about">About</label>
+                    <textarea name="about" cols="40" rows="5" class="form-control" placeholder="About" aria-describedby="id_about_helptext" id="id_about">{{ profile_form.about.value }}</textarea>
+                  </div>
                 <div class="form-group">
                   <label for="id_gender">Gender</label>
                   <select name="gender" class="form-control" required id="id_gender">
-                    <option value="">---------</option>
-                    <option value="male" selected>Male</option>
-                    <option value="female">Female</option>
+                  <option value="">---------</option>
+                  <option value="male" {% if profile_form.gender.value == "male" %}selected{% endif %}>Male</option>
+                  <option value="female" {% if profile_form.gender.value == "female" %}selected{% endif %}>Female</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="id_age">Age</label>
-                  <input type="text" name="age" value="20" maxlength="30" class="form-control" placeholder="Age" id="id_age">
+                  <input type="text" name="age" value="{{ profile_form.age.value }}" maxlength="30" class="form-control" placeholder="Age" id="id_age">
                 </div>
                 <div class="form-group">
                   <label for="id_medical_history">Medical history</label>
-                  <textarea name="medical_history" cols="40" rows="5" class="form-control" placeholder="Medical history" aria-describedby="id_medical_history_helptext" id="id_medical_history">test</textarea>
+                  <textarea name="medical_history" cols="40" rows="5" class="form-control" placeholder="Medical history" aria-describedby="id_medical_history_helptext" id="id_medical_history">{{ profile_form.medical_history.value }}</textarea>
                   <div class="form-text">Enter your medical history</div>
                 </div>
                 <div class="form-group">

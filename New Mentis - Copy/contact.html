@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENTIS Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        
+        /* Global styles */
+        body {
+            background-color: #fff7ea;
+            font-family: "Inter", serif;
+            margin: 0;
+            padding: 0;
+            color: #fff7ea; /* Text color set to white */
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: rgba(55, 113, 91, 1);
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-size: 36px;
+            padding-left: 40px;
+            font-family: "Inter", serif;
+            color: #fff7ea; /* Navbar text color set to white */
+        }
+
+        .navbar-brand:hover {
+            color: #fff7ea;
+        }
+
+        .nav-link {
+            font-family: "Inter", serif;
+            color: #fff7ea; /* Navbar link color set to white */
+        }
+
+        .nav-link:hover {
+            color: #fff7ea;
+            text-decoration: underline;
+        }
+
+        /* Profile container styles */
+        .profile-container {
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #f5deb3;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile box styles */
+        .profile-box {
+            background-color: rgba(55, 113, 91, 1); /* Changed to navbar color */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(55, 113, 91, 1);
+            margin-bottom: 20px;
+        }
+
+        .profile-box h3 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff7ea; /* Text color set to white */
+        }
+
+        .profile-box p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff7ea; /* Text color set to white */
+        }
+
+        .profile-box h4 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff7ea; /* Text color set to white */
+        }
+
+        /* Table styles */
+        .table {
+            margin-top: 40px;
+            font-size: 20px;
+            color: #fff7ea; /* Table text color set to white */
+        }
+
+        .table th {
+            font-weight: bold;
+        }
+
+        .social-share ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .social-share ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-share ul li a {
+            font-size: 24px;
+            transition: color 0.3s ease;
+            color: #fff7ea; /* Social media icon color set to white */
+        }
+
+        .social-share ul li a:hover {
+            color: rgba(34, 85, 69, 1);
+        }
+
+        footer {
+            background-color: rgba(55, 113, 91, 1);
+            color: #fff7ea; /* Footer text color set to white */
+            text-align: center;
+            padding: 15px 0;
+            font-family: 'Georgia', serif;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .profile-box h3 {
+                font-size: 22px;
+            }
+
+            .profile-box h4 {
+                font-size: 20px;
+            }
+
+            .table {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="home.html">MENTIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Disorders</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="mentis.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container profile-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-box text-center">
+                    <div class="profile-avatar">
+                        <img src="img/profile2.png" alt="">
+                    </div>
+                    <h3>MR. Ahmed Elsayed</h3>
+                    <p>Tel: 369 258 147</p>
+                    <p>Email: h@example.com</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="profile-box">
+                    <h4>Details</h4>
+                    <table class="table table-borderless">
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <th scope="row">Job:</th>
+                            <td>Sales man</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Address:</th>
+                            <td>20 Elgamalya st</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Gender:</th>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Medical History:</th>
+                            <td>Diabetes</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Date of Birth:</th>
+                            <td>1/12/2001</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Social Media:</th>
+                            <td>
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebookIcon" width="30"></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagramIcon" width="30"></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="twitterIcon" width="30"></a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MENTIS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
