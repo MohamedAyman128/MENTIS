@@ -6,18 +6,45 @@ MENTIS is a project repository owned by [Mohamed Ayman](https://github.com/Moham
 ## Installation
 To install and set up the project locally, follow these steps:
 
-1. Clone the repository:
+1. Create a new directory and set up a virtual environment:
+    ```bash
+    mkdir new_directory
+    cd new_directory
+    python -m venv venv
+    ```
+
+2. Activate the virtual environment:
+    - On Windows:
+        ```bash
+        venv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```bash
+        source venv/bin/activate
+        ```
+
+3. Create a `src` directory and navigate into it:
+    ```bash
+    mkdir src
+    cd src
+    ```
+
+4. Clone the repository inside the `src` directory:
     ```bash
     git clone https://github.com/MohamedAyman128/MENTIS.git
     ```
 
-2. Navigate to the project directory:
+5. Navigate back to the `new_directory` and activate the virtual environment:
     ```bash
-    cd MENTIS
+    cd ..
+    venv\Scripts\activate  # On Windows
+    # or
+    source venv/bin/activate  # On macOS/Linux
     ```
 
-3. Install the necessary dependencies:
+6. Navigate to the `src` directory and install the necessary dependencies:
     ```bash
+    cd src/MENTIS
     pip install -r requirements.txt
     ```
 
