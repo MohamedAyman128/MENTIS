@@ -36,14 +36,14 @@ To install and set up the project locally, follow these steps:
     git clone https://github.com/MohamedAyman128/MENTIS.git
     ```
     
-5. Install the necessary dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    
 6. Navigate to the `src` directory and install the necessary dependencies:
     ```bash
     cd src
+    pip install -r requirements.txt
+    ```
+    
+6. To run and test the project locally:
+    ```bash
     python manage.py runserver
     ```
 
