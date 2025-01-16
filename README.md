@@ -38,7 +38,6 @@ To install and set up the project locally, follow these steps:
     
 6. Navigate to the `src` directory and install the necessary dependencies:
     ```bash
-    cd src
     pip install -r requirements.txt
     ```
     
