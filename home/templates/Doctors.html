@@ -4,282 +4,258 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>MENTIS - doctors</title>
-
     <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-   
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}"> 
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    
+    {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", serif;
+    }
 
-* {
-    padding: 0;
-    margin: 0;
+    .header {
+        height: 70px;
+        width: 100%;
+    }
 
-    font-family: "Inter", serif;
-}
+    .logo {
+        width: 150px;
+        margin-left: 20px;
 
-.header {
-    height: 70px;
-    width: 100%;
-}
+    }
 
-.logo {
-    width: 150px;
-    margin-left: 20px;
+    .navbar {
+        display: flex;
+        margin-top: -60px;
+    }
 
-}
+    .nav-link {
+        color: #f7deb5;
+        font-size: large;
+        margin-right: 20px;
+        letter-spacing: 1px;
+    }
 
-.navbar {
-    display: flex;
-    margin-top: -60px;
-}
+    .main {
+        background-color: #fff7ea;
+        height: 100%;
+        width: 100%;
+    }
 
-.nav-link {
+
+    /**************main section*****************************************/
+    .test {
+        background-color: #306450;
+        border: none;
+        padding: 10px;
+
+        border-radius: 15px;
+        margin-top: 50px;
+        width: 250px;
+    }
+
+    .test:hover,
+    .test:focus {
+        background-color: #134e37;
+        border: none;
+        padding: 10px;
+        transition: all 0.2s ease;
+        border-radius: 15px;
+        margin-top: 50px;
+        width: 250px;
+    }
+
+    .test a {
+        color: #f7deb5;
+        text-decoration: none;
+    }
+
+    .test-box {
+        border: 1px solid #134e37;
+        border-radius: 15px;
+        width: 500px;
+        height: 250px;
+        display: flex;
+    }
+
+    .box-img {
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+        border-radius: 35px;
+    }
+
+    .box-btn {
+        background-color: #134e37;
+        border: none;
+        padding: 10px;
+        border-radius: 25px;
+        margin: 10px 0px 0 50px;
+        width: 100px;
+    }
+
+    .box-btn a {
+        color: #f7deb5;
+        text-decoration: none;
+    }
+
+
+    /*****************footer section**********************************/
+    .site-footer {
+        background-color: #37715b;
+        color: #ffe3b9;
+        padding: 10%;
+    }
+
+    .Feedback {
+        color: #07b463;
+        background-color: #ffe3b9;
+        width: 250px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        border-radius: 25px;
+        margin-bottom: 30px;
+    }
+
+    .custom-form {
+        margin: auto;
+        border: 1px solid #f7deb5;
+        border-radius: 15px;
+        padding: 50px;
+        margin-top: -48px;
+        width: 400px;
+
+    }
+
+    .form-control-btn {
+        border: none;
+        border-radius: 0 0 15px 15px;
+        padding: 5px;
+        border: 1px solid #306450;
+        background-color: #306450;
+        width: 300px;
+        color: #f7deb5;
+    }
+
+    .form-control-input {
+        border: none;
+        border-radius: 15px 15px 0 0;
+        padding: 5px;
+        border: 1px solid #306450;
+        width: 300px;
+
+    }
+
+    .email {
+        color: #f7deb5;
+    }
+
+    .site-footer-link {
+        color: #f7deb5;
+
+
+        padding: 10px;
+    }
+
+    .site-footer-links {
+        list-style: none;
+        display: flex;
+        margin-top: -100px;
+    }
+
+    .social-icon-item {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .Design {
+        margin-left: -190px;
+        text-align: center;
+    }
+
+    /*************** doctors***********************/
+    /* styles.css */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+  
+    .slider-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fdf6ec;
+    }
+    
+    h2 {
+        color: #467144;
+        margin-bottom: 20px;
+    }
+    
+    .slider {
+        display: flex;
+        gap: 50px;
+        margin-left: 150px;
+        overflow-x: auto;
+        padding: 50px;
+        scrollbar-width: thin;
+        scrollbar-color: #467144 #fdf6ec;
+    }
+    
+    .slider::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    .slider::-webkit-scrollbar-thumb {
+        background: #467144;
+        border-radius: 4px;
+    }
+    
+    .slider::-webkit-scrollbar-track {
+        background: #e2d7c7;
+    }
+    
+    .slide {
+        height: 300px;
+        width: 200px;
+        flex: 0 0 auto;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .btn-call{
+        background-color: #134e37;
+        text-decoration: none;
+        border: none;
+        border-radius: 16px;
+        border: 1px solid #134e37;
+        width: 100px;
     color: #f7deb5;
-    font-size: large;
-    margin-right: 20px;
-    letter-spacing: 1px;
-}
-
-.main {
-    background-color: #fff7ea;
-    height: 100%;
-    width: 100%;
-}
-
-
-/**************main section*****************************************/
-.test {
-    background-color: #306450;
-    border: none;
-    padding: 10px;
-
-    border-radius: 15px;
-    margin-top: 50px;
-    width: 250px;
-}
-
-.test:hover,
-.test:focus {
-    background-color: #134e37;
-    border: none;
-    padding: 10px;
-    transition: all 0.2s ease;
-    border-radius: 15px;
-    margin-top: 50px;
-    width: 250px;
-}
-
-.test a {
-    color: #f7deb5;
-    text-decoration: none;
-}
-
-.test-box {
-    border: 1px solid #134e37;
-    border-radius: 15px;
-    width: 500px;
-    height: 250px;
-    display: flex;
-}
-
-.box-img {
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-    border-radius: 35px;
-}
-
-.box-btn {
-    background-color: #134e37;
-    border: none;
-    padding: 10px;
-    border-radius: 25px;
-    margin: 10px 0px 0 50px;
-    width: 100px;
-}
-
-.box-btn a {
-    color: #f7deb5;
-    text-decoration: none;
-}
-
-
-/*****************footer section**********************************/
-.site-footer {
-    background-color: #37715b;
-    color: #ffe3b9;
-    padding: 10%;
-}
-
-.Feedback {
-    color: #07b463;
-    background-color: #ffe3b9;
-    width: 250px;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    border-radius: 25px;
-    margin-bottom: 30px;
-}
-
-.custom-form {
-    margin: auto;
-    border: 1px solid #f7deb5;
-    border-radius: 15px;
-    padding: 50px;
-    margin-top: -48px;
-    width: 400px;
-
-}
-
-.form-control-btn {
-    border: none;
-    border-radius: 0 0 15px 15px;
-    padding: 5px;
-    border: 1px solid #306450;
-    background-color: #306450;
-    width: 300px;
-    color: #f7deb5;
-}
-
-.form-control-input {
-    border: none;
-    border-radius: 15px 15px 0 0;
-    padding: 5px;
-    border: 1px solid #306450;
-    width: 300px;
-
-}
-
-.email {
-    color: #f7deb5;
-}
-
-.site-footer-link {
-    color: #f7deb5;
-
-
-    padding: 10px;
-}
-
-.site-footer-links {
-    list-style: none;
-    display: flex;
-    margin-top: -100px;
-}
-
-.social-icon-item {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.Design {
-    margin-left: -190px;
-    text-align: center;
-}
-
-/*************** doctors***********************/
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .slider-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fdf6ec;
-  }
-  
-  h2 {
-    color: #467144;
-    margin-bottom: 20px;
-  }
-  
-  .slider {
-    display: flex;
-    gap: 50px;
-    margin-left: 150px;
-    overflow-x: auto;
-    padding: 50px;
-    scrollbar-width: thin;
-    scrollbar-color: #467144 #fdf6ec;
-  }
-  
-  .slider::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .slider::-webkit-scrollbar-thumb {
-    background: #467144;
-    border-radius: 4px;
-  }
-  
-  .slider::-webkit-scrollbar-track {
-    background: #e2d7c7;
-  }
-  
-  .slide {
-    height: 300px;
-    width: 200px;
-    flex: 0 0 auto;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .btn-call{
-    background-color: #134e37;
-    text-decoration: none;
-    border: none;
-    border-radius: 16px;
-    border: 1px solid #134e37;
-    width: 100px;
-color: #f7deb5;
-margin-top: 25px;
-justify-content: center;
-  }
-  
+    margin-top: 25px;
+    justify-content: center;
+    }
 </style>
 <body>
     <nav>
@@ -302,46 +278,42 @@ justify-content: center;
             </ul>
         </div>
     </nav>
-
-
+    
     <div class="slider-container">
         <h2>Contact with any doctor you want to follow your status</h2>
         <div class="slider">
-          <div class="slide">
-            <img src="{% static 'img/d1.jpg' %}" alt="Doctor 1">
-            <button class="btn-call">contact</button>
-          </div>
-          <div class="slide">
-            <img src="{% static 'img/d4.jpg' %}" alt="Doctor 2">
-            <button class="btn-call">contact</button>
-          </div>
-          <div class="slide">
-            <img src="{% static 'img/d3.jpg' %}" alt="Doctor 3">
-            <button class="btn-call">contact</button>
-          </div>
-          <div class="slide">
-            <img src="{% static 'img/d4.jpg' %}" alt="Doctor 4">
-            <button class="btn-call">contact</button>
-          </div>
-          <div class="slide">
-            <img src="{% static 'img/d5.jpg' %}" alt="Doctor 5">
-            <button class="btn-call">contact</button>
-          </div>
+            <div class="slide">
+                <img src="{% static 'img/d1.jpg' %}" alt="Doctor 1">
+                <button class="btn-call">contact</button>
+            </div>
+            <div class="slide">
+                <img src="{% static 'img/d4.jpg' %}" alt="Doctor 2">
+                <button class="btn-call">contact</button>
+            </div>
+            <div class="slide">
+                <img src="{% static 'img/d3.jpg' %}" alt="Doctor 3">
+                <button class="btn-call">contact</button>
+            </div>
+            <div class="slide">
+                <img src="{% static 'img/d4.jpg' %}" alt="Doctor 4">
+                <button class="btn-call">contact</button>
+            </div>
+            <div class="slide">
+                <img src="{% static 'img/d5.jpg' %}" alt="Doctor 5">
+                <button class="btn-call">contact</button>
+            </div>
         </div>
-      </div>
+    </div>
  
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-6 col-12 mb-5 mb-lg-0">
                     <div class="subscribe-form-wrap">
                         <h6 class="Feedback">ٍSend Feedback</h6>
-
                         <form id="contact" class="custom-form subscribe-form" action="{% url 'contact:contact' %}" method="post" role="form">
                             {% csrf_token %}
                             <input type="text"  class="form-control-input" name="message" placeholder="your opinion" required="">
-
                             <div class="col-lg-12 col-12">
                                 <button type="submit" class="form-control-btn" id="submit">Send</button>
                             </div>
@@ -351,32 +323,14 @@ justify-content: center;
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
                     <h6 class="site-footer-title mb-3">Contact</h6>
-
                     <p class="mb-2"><strong class="d-inline me-2">Phone:</strong> 010-020-0340</p>
-
                     <p>
                         <strong class="d-inline me-2">Email:</strong>
                         <a href="#" class="email">example@gmail.com</a>
                     </p>
                 </div>
-
                 <div class="col-lg-3 col-md-6 col-12">
-                    <h6 class="site-footer-title mb-3">Download Mobile</h6>
-
-                    <div class="site-footer-thumb mb-4 pb-2">
-                        <div class="d-flex flex-wrap">
-                            <a href="#">
-                                <img src="{% static 'img/app-store.png' %}" class="me-3 mb-2 mb-lg-0 img-fluid" alt="">
-                            </a>
-
-                            <a href="#">
-                                <img src="{% static 'img/play-store.png' %}" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                    </div>
-
                     <h6 class="site-footer-title mb-3">Social</h6>
-
                     <ul class="social-icon">
                         <li class="social-icon-item">
                             <a href="#" class="social-icon-link bi-instagram"></a>
@@ -391,30 +345,24 @@ justify-content: center;
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
 
         <div class="container pt-5">
             <div class="row align-items-center">
-
-
                 <div class="col-lg-7 col-md-9 col-12">
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Homepage</a>
+                            <a href="#" class="site-footer-link"> </a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Browse episodes</a>
+                            <a href="#" class="site-footer-link"> </a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Help Center</a>
+                            <a href="#" class="site-footer-link"> </a>
                         </li>
-
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact Us</a>
+                            <a href="#" class="site-footer-link"> </a>
                         </li>
                     </ul>
                 </div>
@@ -427,13 +375,10 @@ justify-content: center;
         </div>
     </footer>
 
-
     <!-- JAVASCRIPT FILES -->
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
-
 </body>
-
 </html>

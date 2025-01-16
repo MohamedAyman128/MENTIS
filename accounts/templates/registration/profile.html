@@ -176,7 +176,6 @@
         </div>
     </nav>
     
-
     <div class="container profile-container">
         <div class="row">
             <div class="col-md-4">
@@ -198,6 +197,10 @@
                             <td>{{profile.gender}}</td>
                           </tr>
                           <tr>
+                            <th scope="row">About:</th>
+                            <td>{{profile.about}}</td>
+                          </tr>
+                          <tr>
                             <th scope="row">Medical History:</th>
                             <td>{{profile.medical_history}}</td>
                           </tr>
@@ -213,7 +216,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 MENTIS. All rights reserved.</p>
+        <p class="copyright-text mb-0">&copy; 2025 MENTIS. All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
