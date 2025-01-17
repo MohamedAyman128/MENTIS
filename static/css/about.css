@@ -1,5 +1,5 @@
 :root {
-	--clr-primary: teal;
+	--clr-primary: rgba(55, 113, 91, 1);
 	--clr-secondary: crimson;
 	--bg-primary: #0d1a2d;
 	--bg-secondary: #14273e;
@@ -34,7 +34,7 @@
 	padding-block: clamp(2rem, 5vw, 5rem);
   }
   a {
-	color: cyan;
+	color: rgba(55, 113, 91, 1);
 	text-decoration: none;
   }
   .container {
