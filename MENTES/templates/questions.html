@@ -223,7 +223,7 @@
             <h2>{{ question.question_text }}</h2>
             <div class="btn-group">
                 {% for answer in Answers %}
-                {% if question.id == answer.question %}
+                {% if question.id == answer.question_id %}
                 <button type="button" class="btn">{{ answer.answer_text }}</button>
                 {% endif %}
                 {% endfor %}
